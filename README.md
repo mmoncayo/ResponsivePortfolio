@@ -1,2 +1,2 @@
 # ResponsivePortfolio
-portfolio that is mobile responsive
+homework02- portfolio that is mobile responsive
