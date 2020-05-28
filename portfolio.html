@@ -1,206 +1,97 @@
 <!DOCTYPE html>
 <html lang="en-us">
 ​
+
 <head>
-​
+  ​
   <meta charset="UTF-8">
   <!-- Adding the viewport meta tag in order to be compatible across different device screens -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-​
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  ​
   <title>Portfolio</title>
-​
-  <!-- Bringing in Bootstrap CSS -->
-  <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-    crossorigin="anonymous"
-  />
+  ​
+  <!-- bringing in bootstrap css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css" media="screen">
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
-  <style>
-   .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 40px;
-    font-size: 12px;
-    letter-spacing: 5px;
-    font-weight: 700;
-  }
-  .navbar-header {
-      background-color: cadetblue;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-left: 20px;
-      font-size: 20px;
-      color: whitesmoke;
-  }
-  .navbar-brand {
-    font-size: 25px;
-    font-weight: 800;
-  }
-  .navbar-nav {
-    font-size: 16px;
-  }
-  body {
-    background-color: #efeee7;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #333333;
-    margin: 0;
-    padding: 0;
-}
-h1, h3 {
-  color: cadetblue;
-}
-img{
-  width: 200px;
-  height: 300px;
-  margin-left: 30px;
-  margin-bottom: 30px;
-}
-.container {
-  background-color: white;
-}
-aside {
-  padding-right: 20px;
-}
-footer {
-  position: fixed;
-  bottom: 0;
-  padding-top: 20px;
-  left: 0;
-  width: 100%;
-  height: 90px;
-  background-color: dimgray;
-  color: whitesmoke;
-}
-.box {
-  position: relative;
-  display: inline-block; /* Make the width of box same as image */
-  }
-.box {
-  position: relative;
-  z-index: 999;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-  width: 45%; /* Set the width of the positioned div */
-  }
-  .text {
-    background-color: whitesmoke;
-    margin-left: 20px; 
-    top: 400%;   
-  }
-  @media screen and (max-width: 980px) {
-  .wrapper {
-    width: 100%;
-    padding: 20px;
-  }
-}
-</style>
+
 </head>
 
 <body>
-    ​<!-- navigation bar at the top of the page with three links floating to the right -->
-    <nav class="navbar navbar-expand-sm bg-light">
-      <div class="container fluid">
-          <div class="navbar-header">
-              <a class="navbar-brand navbar-light">Matt Moncayo</a>
-          </div>
-          <!-- creates list of links -->
-          <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                  <a class="nav-link" href="https://mmoncayo.github.io/ResponsivePortfolio/index.html">About</a>
-              </li>
-              <li class="nav-item active">
-                  <a class="nav-link" href="https://mmoncayo.github.io/ResponsivePortfolio/portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav-item active">
-                  <a class="nav-link" href="https://mmoncayo.github.io/ResponsivePortfolio/contact.html">Contact</a>
-              </li>
-          </ul>
+  ​
+  <!-- navigation bar at the top of the page with three links floating to the right -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand navbar-light" href="https://mmoncayo.github.io/ResponsivePortfolio/index.html"
+        id="logo">Matt Moncayo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- creates list of links -->
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="https://mmoncayo.github.io/ResponsivePortfolio/index.html">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="https://mmoncayo.github.io/ResponsivePortfolio/portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://mmoncayo.github.io/ResponsivePortfolio/contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
+    </div>
   </nav>
+
   <!-- this will create the container and the main area where the grid layout framework is made -->
   <div class="container">
-    <div class="wrapper">
-      <div class="card-body">
-      <div class="row">
-        <div class="col-sm-12">
-            <h1>Portfolio</h1>
-        </div>
+    <main class="row">
+      <div class="col-md-8">
+        <article class="block">
+          <h1 class="block-header">Portfolio</h1>
+          <hr />
+          <div class="row">
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img class="img-fluid port-image" src="https://via.placeholder.com/350x350" alt="">
+            </div>
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img class="img-fluid port-image" src="https://via.placeholder.com/350x350" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img class="img-fluid port-image" src="https://via.placeholder.com/350x350" alt="">
+            </div>
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img class="img-fluid port-image" src="https://via.placeholder.com/350x350" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img class="img-fluid port-image" src="https://via.placeholder.com/350x350" alt="">
+            </div>
+          </div>
+        </article>
       </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="box">
-            <img src="http://placehold.it/150x150" alt="Placeholder" class="img-thumbnail">
-            <div class="text">
-                <h3>Project 1</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="box">
-            <img src="http://placehold.it/150x150" alt="Placeholder" class="img-thumbnail">
-              <div class="text">
-                  <h3>Project 2</h3>
-              </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="box">
-            <img src="http://placehold.it/150x150" alt="Placeholder" class="img-thumbnail">
-              <div class="text">
-                <h3>Project 3</h3>
-              </div>
-            </div>
-          </div>
-        <div class="col-sm-6">
-          <div class="box">
-            <img src="http://placehold.it/150x150" alt="Placeholder" class="img-thumbnail">
-              <div class="text">
-                <h3>Project 4</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="box">
-            <img src="http://placehold.it/150x150" alt="Placeholder" class="img-thumbnail">
-            <div class="text">
-                <h3>Project 5</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="box">
-
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
+    </main>
   </div>
-</div>
+
+  <!-- creating a footer -->
+  <footer class="footer">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Copyright 2020 Matt Moncayo
+    </p>
+  </footer>
 
 
-      <!-- creating a footer -->
-      <footer class="page-footer font-small stylish-color-dark pt-4">
-        <div class="row">
-          <div class="col-sm-12">
-          </div>
-        </div>
-      </footer>
-  <!-- optional javascript -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- optional javascript & bootstrap cdn -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </body>
+
 </html>
