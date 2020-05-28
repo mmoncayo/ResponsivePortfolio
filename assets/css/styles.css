@@ -30,6 +30,7 @@ main {
     font-weight: bold;
     color: rgb(247, 245, 235);
     background: rgb(53, 97, 148);
+    padding: 10px;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
