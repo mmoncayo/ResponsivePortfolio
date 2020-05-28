@@ -19,7 +19,7 @@ main {
 }
   
 .block-header {
-    color: #4aaaa5;
+    color: rgb(53, 97, 148);
     font-family: 'Libre Baskerville', serif;
     font-weight: bold;
 }
@@ -28,12 +28,12 @@ main {
     font-family: 'Libre Baskerville', serif;
     font-size: 24px;
     font-weight: bold;
-    color: #fff;
-    background: #4aaaa5;
+    color: rgb(247, 245, 235);
+    background: rgb(53, 97, 148);
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-    color: #4aaaa5;
+    color: rgb(53, 97, 148);
 }
   
 .navbar {
@@ -43,7 +43,7 @@ main {
 
 @media only screen and (max-width: 767px) {
     .navbar-header {
-      background-color: #4aaaa5;
+      background-color: rgb(53, 97, 148);
     }
 }
 
@@ -73,13 +73,13 @@ main {
   
 .text-muted-footer {
     margin-top: 15px;
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
   
 .two-toned-footer-color {
     height: 6px;
     padding-top: 3px;
-    background-color: #4aaaa5;
+    background-color: rgb(247, 247, 247);
 }
 
 
@@ -89,7 +89,7 @@ main {
     font-family: 'Libre Baskerville', serif;
     font-size: 32px;
     font-weight: bold;
-    color: #4aaaa5;
+    color: rgb(53, 97, 148);
 }
   
 #about-image {
@@ -115,7 +115,7 @@ main {
     font-size: 16px;
     font-weight: lighter;
     color: #fff;
-    background-color: #4aaaa5;
+    background-color: rgb(53, 97, 148);
     border: 0;
 }
   
